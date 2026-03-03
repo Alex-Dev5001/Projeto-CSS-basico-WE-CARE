@@ -7,235 +7,388 @@
 
 
 .wrapper {
-    display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+    display: flex;
+}
+
+.left {
+    width: 45vw;
 }
 
 .caixa-menu {
-    color: rgba(152, 157, 156, 1);
+    display: flex;
+    align-items: center;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.25vw;
     line-height: 100%;
     letter-spacing: 0%;
-    margin-left: 60px;
-    height: 50px;
-    align-items: center;
-    margin-top: 38px;
-    display: flex;
-    gap: 23px;
+
 }
 
-.right {
-    padding-left: 70px;
-    margin: 120px 0px 0px -10px;
-    width: 590px;
-    height: 450px;
+.link-header {
+    color: #989D9C;
+    font-weight: 600;
+    font-size: 1.25vw;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 2.292vw;
+    margin-right: 1.198vw;
+}
+
+.link-header:nth-child(1) {
+    margin-left: 3.958vw;
+}
+
+.link-header:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.link-header:active {
+    opacity: 0.6;
 }
 
 .login {
     color: #FFFFFF;
-    font-size: 24px;
+    background: #665AE1;
+    border: none;
+    margin-top: 1.979vw;
+    font-weight: 600;
+    font-size: 1.25vw;
     line-height: 100%;
     letter-spacing: 0%;
-    border: none;
-    background: rgba(102, 90, 225, 1);
-    cursor: pointer;
-    width: 130px;
-    height: 41px;
-    border-radius: 50px;
+    width: 6.771vw;
+    height: 2.135vw;
+    border-radius: 2.604vw;
 }
 
-main {
-    width: 490px;
-    margin-left: -130px;
+.login:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.login:active {
+    opacity: 0.6;
 }
 
 img {
-    margin-top: 40px;
-    margin-left: 110px;
-    width: 480px;
+    margin-left: 6.51vw;
+    margin-top: 7.5vw;
+    width: 29.583vw;
 }
 
+.right {
+    width: auto;
+}
 
 h1 {
+    color: #515151;
+    margin-top: 11.302vw;
     font-weight: 900;
-    font-size: 100px;
+    font-size: 5.208vw;
     line-height: 100%;
     letter-spacing: 0%;
 }
 
 h2 {
-    margin-top: 10px;
+    color: #515151;
     font-weight: 500;
-    font-size: 58px;
+    font-size: 3.021vw;
     line-height: 100%;
     letter-spacing: 0%;
-
 }
 
 p {
-    margin-top: 32px;
+    margin-top: 1.667vw;
+    width: 26.823vw;
     color: #848484;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.25vw;
     line-height: 100%;
     letter-spacing: 0%;
-
 }
 
 .explore {
-    color: #000000;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 1.458vw;
     line-height: 100%;
     letter-spacing: 0%;
-    background-color: #ADFF00;
-    cursor: pointer;
+    color: #000000;
+    margin-top: 3.385vw;
+    background: #ADFF00;
     border: none;
+    width: 12.448vw;
+    height: 3.333vw;
+    border-radius: 20.5px;
     box-shadow: 0px 4px 4px 0px #00000040;
-    margin-top: 65px;
-    width: 239px;
-    height: 64px;
-    border-radius: 50px;
 }
 
-@media (max-width:1300px) {
-    .wrapper {
-        zoom: 0.9;
-    }
+.explore:hover {
+    cursor: pointer;
+    opacity: 0.8;
 }
 
-@media (max-width:1200px) {
-    .wrapper {
-        zoom: 0.8;
-    }
-}
-@media (max-width:1000px) {
-    .wrapper {
-        zoom: 0.7;
-    }
+.explore:active {
+    opacity: 0.6;
 }
 
-@media (max-width:900px) {
+@media screen and (max-width:1024px) {
+
     .wrapper {
-        zoom: 1;
         display: flex;
         flex-direction: column;
-        width: 100vw;
-        height: 100vh;
     }
 
     .caixa-menu {
-        position: relative;
-        left: 15vw;
-        color: rgba(152, 157, 156, 1);
+        margin-left: 2vw;
+        justify-content: center;
+        display: inline-flex;
+        gap: 10vw;
+    }
+
+    .link-header {
+        color: #989D9C;
         font-weight: 600;
-        font-size: 3vw;
+        font-size: 2vw;
         line-height: 100%;
         letter-spacing: 0%;
-        height: 50px;
-        align-items: center;
-        margin-top: 30px;
-        display: flex;
-        gap: 10px;
     }
 
-    .left {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
+    .link-header:hover {
+        cursor: pointer;
+        opacity: 0.8;
     }
 
-
-    .right {
-        position: relative;
-        top: -260vw;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-        height: 50vw;
+    .link-header:active {
+        opacity: 0.6;
     }
 
     .login {
-        position: relative;
-        top: 8vh;
-        right: 53vw;
-        color: #FFFFFF;
-        font-size: 5vw;
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 2.25vw;
         line-height: 100%;
         letter-spacing: 0%;
+        background-color: #665AE1;
+        color: #ffffff;
         border: none;
-        background: rgba(102, 90, 225, 1);
+        width: 20vw;
+        height: 5vw;
+        border-radius: 3vw;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 10vw;
+        transform: translateX(-50%);
+    }
+
+    .login:hover {
         cursor: pointer;
-        width: 35vw;
-        height: 8vh;
-        border-radius: 50px;
+        opacity: 0.8;
     }
 
-    main {
-        display: flex;
-        flex-direction: column;
-        width: 490vw;
-        margin-left: 0vw;
+    .login:active {
+        opacity: 0.6;
     }
 
-    img {
-        margin-left: -5vw;
+    .left {
         margin-top: 5vw;
-        position: relative;
-        top: 5vh;
-        width: 80vw;
+        width: 100%;
     }
 
+    .right {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-logo {
+        display: block;
+        margin: 10vw auto;
+        width: 55vw;
+    }
 
     h1 {
-        position: relative;
-        top: 250vw;
-        left: -5vw;
-        font-size: 15vw;
+        margin-top: 5vw;
+        text-align: center;
+        font-weight: 900;
+        font-size: 10vw;
         line-height: 100%;
         letter-spacing: 0%;
-        font-weight: 800;
     }
 
     h2 {
-        margin-top: 250vw;
-        margin-left: -9vw;
+        text-align: center;
         font-weight: 500;
-        font-size: 9vw;
+        font-size: 5vw;
         line-height: 100%;
         letter-spacing: 0%;
-
     }
 
     p {
-        padding: 5vw;
+        font-size: 3vw;
+        display: block;
+        margin: 5vw auto 0;
         text-align: center;
-        margin-top: 5vw;
-        margin-left: -13vw;
-        color: #848484;
+        width: 70vw;
         font-weight: 400;
-        font-size: 6vw;
+    }
+
+    .explore {
+        display: block;
+        background: #ADFF00;
+        border: none;
+        width: 25vw;
+        height: 5vw;
+        border-radius: 5vw;
+        margin: 5vw auto;
+    }
+
+}
+
+
+@media screen and (max-width:450px) {
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link-header {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .left {
+        width: 100%;
+        height: 55vh;
+    }
+
+    .right {
+        width: 100%;
+        height: 45vh;
+    }
+
+    .image-logo {
+        display: block;
+        margin: 149px auto auto auto;
+        width: 354px;
+        height: 317px;
+    }
+
+    h1 {
+        text-align: center;
+        display: block;
+        margin-top: 24px;
+        color: #515151;
+        font-weight: 900;
+        font-size: 50px;
         line-height: 100%;
         letter-spacing: 0%;
     }
 
-    .explore {
-        width: 65vw;
-        color: #000000;
-        font-weight: 700;
-        font-size: 10vw;
-        line-height: 15vw;
+    h2 {
+        text-align: center;
+        display: block;
+        margin-top: 7px;
+        color: #515151;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 100%;
         letter-spacing: 0%;
-        background-color: #ADFF00;
-        cursor: pointer;
+    }
+
+    p {
+        display: none;
+    }
+
+    .explore {
+        display: block;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 100%;
+        letter-spacing: 0%;
         border: none;
-        box-shadow: 0vh 4vw 4vh 0vw #00000040;
-        margin-top: 2vh;
-        margin-left: -12vw;
-        border-radius: 50vw;
+        margin: 17px auto 133px auto;
+        width: 239px;
+        height: 64px;
+        border-radius: 50px;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        background: #ADFF00;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link-header {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .left {
+        width: 100%;
+        height: 55vh;
+    }
+
+    .right {
+        width: 100%;
+        height: 45vh;
+    }
+
+    .image-logo {
+        display: block;
+        margin: 70px auto auto auto;
+        width: 340px;
+    }
+
+    h1 {
+        text-align: center;
+        display: block;
+        margin-top: 50px;
+        color: #515151;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    h2 {
+        text-align: center;
+        display: block;
+        margin-top: 7px;
+        color: #515151;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    p {
+        display: none;
+    }
+
+    .explore {
+        display: block;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        border: none;
+        margin: 30px auto 133px auto;
+        width: 239px;
+        height: 64px;
+        border-radius: 50px;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        background: #ADFF00;
     }
 }
